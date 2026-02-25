@@ -4,7 +4,6 @@ An end-to-end machine learning pipeline built to accurately classify breast canc
 
 The core objective of this project is to predict the **`CANCER_TYPE_DETAILED`** label using a highly optimized **LightGBM Classifier**. Moving beyond standard exploratory notebooks, this repository is architected with a custom, object-oriented preprocessing and prediction pipeline designed for robust model inference and deployment.
 
----
 
 ## 📊 Key Results & Model Performance
 The final LightGBM model was carefully tuned to handle class imbalances and heterogeneous medical data, yielding exceptional performance across major cancer subtypes (such as Invasive Ductal Carcinoma).
@@ -15,32 +14,32 @@ The final LightGBM model was carefully tuned to handle class imbalances and hete
 | **Balanced Accuracy** | 0.892 | Proves effective handling of imbalanced clinical data. |
 
 🩺 Example Subtypes:
-Breast
-Breast Invasive Ductal Carcinoma
-Breast Invasive Lobular Carcinoma
-Breast Invasive Mixed Mucinous Carcinoma
-Breast Mixed Ductal and Lobular Carcinoma
-Invasive Breast Carcinoma
+* Breast
+* Breast Invasive Ductal Carcinoma
+* Breast Invasive Lobular Carcinoma
+* Breast Invasive Mixed Mucinous Carcinoma
+* Breast Mixed Ductal and Lobular Carcinoma
+* Invasive Breast Carcinoma
 
 ⚙️ Development Workflow
 1. Exploratory Data Analysis (EDA)
-Inspected clinical and patient data to understand feature distributions and modality availability flags.
+* Inspected clinical and patient data to understand feature distributions and modality availability flags.
 
-Analyzed missing values, correlations, and class imbalances.
+* Analyzed missing values, correlations, and class imbalances.
 
-Leveraged visualizations to gain interpretability insights into feature importance for clinical decision-making.
+* Leveraged visualizations to gain interpretability insights into feature importance for clinical decision-making.
 
 2. Custom Preprocessing & Feature Engineering
-Built a custom CancerSubtypeClassifier class (src/pipeline.py) to handle missing values and scale features dynamically.
+* Built a custom CancerSubtypeClassifier class (src/pipeline.py) to handle missing values and scale features dynamically.
 
-Utilized LightGBM's native categorical support combined with custom SimpleImputer and LabelEncoder steps.
+* Utilized LightGBM's native categorical support combined with custom SimpleImputer and LabelEncoder steps.
 
-Successfully merged clinical sample and patient data into a unified, deployment-ready structure.
+* Successfully merged clinical sample and patient data into a unified, deployment-ready structure.
 
 3. Model Training & Evaluation
-Tested multiple baseline models (Logistic Regression, Random Forest, etc.) before selecting LightGBM for its efficiency with heterogeneous data and built-in regularization.
+* Tested multiple baseline models (Logistic Regression, Random Forest, etc.) before selecting LightGBM for its efficiency with heterogeneous data and built-in regularization.
 
-Tuned hyperparameters to achieve the optimal balance between performance and computation time. Focus was placed on balanced metrics suitable for medical classification.
+* Tuned hyperparameters to achieve the optimal balance between performance and computation time. Focus was placed on balanced metrics suitable for medical classification.
 
 ## 📂 Project Architecture
 
@@ -64,18 +63,18 @@ Breast-Cancer-Subtype-Predictor/
 ```
 ⚙️ Development Workflow
 1. Exploratory Data Analysis (EDA)
-*Inspected clinical and patient data to understand feature distributions and modality availability flags.
+* Inspected clinical and patient data to understand feature distributions and modality availability flags.
 
-*Analyzed missing values, correlations, and class imbalances.
+* Analyzed missing values, correlations, and class imbalances.
 
-*Leveraged visualizations to gain interpretability insights into feature importance for clinical decision-making.
+* Leveraged visualizations to gain interpretability insights into feature importance for clinical decision-making.
 
 2. Custom Preprocessing & Feature Engineering
-*Built a custom CancerSubtypeClassifier class (src/pipeline.py) to handle missing values and scale features dynamically.
+* Built a custom CancerSubtypeClassifier class (src/pipeline.py) to handle missing values and scale features dynamically.
 
-*Utilized LightGBM's native categorical support combined with custom SimpleImputer and LabelEncoder steps.
+* Utilized LightGBM's native categorical support combined with custom SimpleImputer and LabelEncoder steps.
 
-*Successfully merged clinical sample and patient data into a unified, deployment-ready structure.
+* Successfully merged clinical sample and patient data into a unified, deployment-ready structure.
 
 3. Model Training & Evaluation
 * Tested multiple baseline models (Logistic Regression, Random Forest, etc.) before selecting LightGBM for its efficiency with heterogeneous data and built-in regularization.
@@ -114,9 +113,5 @@ Data Manipulation: Pandas, NumPy
 
 Visualization: Matplotlib, Seaborn
 
-## **🚀 Clinical Relevance**
-This model demonstrates strong potential for clinical application in oncology. By providing highly accurate and interpretable predictions of breast cancer subtypes, this tool can support medical professionals in treatment decision-making and patient stratification for clinical trials.
-
-"Data exploration guided us. Preprocessing refined us. LightGBM perfected us."
 
 
