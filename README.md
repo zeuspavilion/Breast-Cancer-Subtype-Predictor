@@ -22,14 +22,6 @@ The final LightGBM model was carefully tuned to handle class imbalances and hete
 * Breast Mixed Ductal and Lobular Carcinoma
 * Invasive Breast Carcinoma
 
-🧩 Tools & Libraries Used
-* Python
-* Pandas, NumPy
-* Matplotlib, Seaborn (for visualization)
-* Scikit-learn
-* LightGBM
-* Jupyter Notebook
-
 ⚙️ Development Workflow
 1. Exploratory Data Analysis (EDA)
 * Inspected clinical and patient data to understand feature distributions and modality availability flags.
