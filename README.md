@@ -7,11 +7,12 @@ The core objective of this project is to predict the **`CANCER_TYPE_DETAILED`** 
 
 ## 📊 Key Results & Model Performance
 The final LightGBM model was carefully tuned to handle class imbalances and heterogeneous medical data, yielding exceptional performance across major cancer subtypes (such as Invasive Ductal Carcinoma).
-| Metric | Score | Note |
-| :--- | :--- | :--- |
-| **Overall Accuracy** | 99.0% | Near-perfect classification on majority classes. |
-| **Macro F1-Score** | 0.931 | Excellent predictive stability across all subtypes. |
-| **Balanced Accuracy** | 0.892 | Proves effective handling of imbalanced clinical data. |
+| Metric | Description |
+| :--- | :--- | 
+| **Model Used** | LightGBMClassifier |
+| **Task Type** | Multiclass Classification |
+| **Target Variable** | CANCER_TYPE_DETAILED |
+| **Performance** | Achieved strong class-wise F1-scores and excellent predictive stability across cancer subtypes. |
 
 🩺 Example Subtypes:
 * Breast
@@ -20,6 +21,14 @@ The final LightGBM model was carefully tuned to handle class imbalances and hete
 * Breast Invasive Mixed Mucinous Carcinoma
 * Breast Mixed Ductal and Lobular Carcinoma
 * Invasive Breast Carcinoma
+
+🧩 Tools & Libraries Used
+* Python
+* Pandas, NumPy
+* Matplotlib, Seaborn (for visualization)
+* Scikit-learn
+* LightGBM
+* Jupyter Notebook
 
 ⚙️ Development Workflow
 1. Exploratory Data Analysis (EDA)
